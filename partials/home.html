@@ -1,36 +1,48 @@
-<div class="header">
+<div  class="header">
     <div class="content-header">
-        <div class="img-iphone">
-            <img src="public/img/iphone.png">
+        <div class="img-tablet col-lg-5 espacio-tablet">
+            <img src="public/img/tablet.png" class="img-responsive">
         </div>
-        <div class="botones-app">
-            <a href=""><img src="public/img/app-store.png"></a>
-            <a href=""><img src="public/img/play-store.png"></a>
+         <div class="botones-app col-lg-5">
+            <p>Mejoramos la experiencia a la hora de pedir en tu restaurante</p>
         </div>
     </div>
 </div>
 
 <!-- <div class="container"> -->
+<a href="#/#scroll">
 	<div class="row info-planes">
 		<div class="col-md-12">
-			<div class="col-md-4">	
+			<div class="col-md-3">	
+				<div class="item-info">
+					<i class="fa fa-question"></i>
+					<p class="titulo_botones">Como Funciona</p>
+					<p class="parrafo_botones">Aprende como usar nuestra app</p>
+				</div>
+			</div>
+		</a>
+
+			<div class="col-md-3">	
 				<div class="item-info">
 					<i class="fa fa-cutlery"></i>
-					<p>Menú Perzonalizado</p>
+					<p class="titulo_botones">Restaurante</p>
+					<p class="parrafo_botones img-responsive">servicio para mejorar experiencia</p>
 				</div>
 			</div>
 
-			<div class="col-md-4">	
+			<div class="col-md-3">	
 				<div class="item-info">
-					<i class="fa fa-cutlery"></i>
-					<p>Menú Perzonalizado</p>
+					<i class="fa fa-tablet"></i>
+					<p class="titulo_botones">Tablet</p>
+					<p class="parrafo_botones">te suministramos una app con tablet incluida</p>
 				</div>
 			</div>
 
-			<div class="col-md-4">	
+			<div class="col-md-2 btn">	
 				<div class="item-info">
-					<i class="fa fa-cutlery"></i>
-					<p>Menú Perzonalizado</p>
+					<i class="fa fa-map"></i>
+					<p class="titulo_botones">Menu</p>
+					<p class="parrafo_botones">Virtualizamos tu menu</p>
 				</div>
 			</div>
 		</div>
@@ -49,21 +61,15 @@
 			  </ol>
 
 			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
+			  <div class="carousel-inner " role="listbox">
 			    <div class="item active">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
+			    	<img src="public/img/doh.png">
 			      <div class="carousel-caption">
 			        <!-- <p>Aqui contenido 1</p> -->
 			      </div>
 			    </div>
 
 			    <div class="item">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
 			      <img src="public/img/doh.png">
 			      <div class="carousel-caption">
 			        <!-- <p>Aqui contenido 2</p> -->
@@ -72,14 +78,10 @@
 
 			    <div class="item">
 			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
-			      <img src="public/img/doh.png">
 			      <div class="carousel-caption">
 			        <!-- <p>Aqui contenido 3</p> -->
 			      </div>
 			    </div>
-
 			  </div>
 
 			  <!-- Controls -->
@@ -95,14 +97,38 @@
 		</div>
 	</div>
 <!-- </div> -->
-
-
-<div class="row comoFunciona">
+<div class="row comoFunciona" id="scroll">
 	<div class="col-md-12 content-video">
-		<h2>¿Cómo funciona?</h2>
-		<div class="video">
-			<video src="public/video/video.ogv"  width="100%" height="480" controls></video>
+		<div>
+			<h2>¿Cómo funciona?</h2>
+		</div>
+		<div class="embed-responsive embed-responsive-16by9">
+  			<iframe class="embed-responsive-item video" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
 		</div>
 	</div>
 </div>
-
+<!-- Abajo el formulario de contacto -->
+<div class="espacio"> 
+	<div class="container formulario">
+ 		<h2>Escribenos</h2>
+  	<form role="form" class="camposformulario">
+   		<div class="form-group col-lg-6">
+      		<label for="nombre">Nombre:</label>
+      			<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+    	</div>
+    	<div class="form-group col-lg-6">
+      		<label for="tel">Telefono:</label>
+      			<input type="text" class="form-control" id="tel" placeholder="Telefono">
+    	</div>
+    	<div class="form-group col-lg-12">
+      		<label for="email">E-mail:</label>
+      			<input type="email" class="form-control" id="email" placeholder="E-mail">
+    	</div>    	
+    	<div class="form-group col-lg-12">
+      		<label for="email">Mensaje:</label>
+      			<textarea class="form-control" rows="3" id="email" placeholder="Tu mensaje aqui"></textarea>
+    	</div>      	
+    	<button type="submit" class="btn btn-default">Enviar</button>
+  	</form>
+	</div>
+</div>
